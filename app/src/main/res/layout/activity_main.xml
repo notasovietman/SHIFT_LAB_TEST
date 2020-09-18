@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".View.MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgr2">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintHorizontal_bias="0.18"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.158" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/light"
+                android:text="@string/special_for_shift"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_input_layout"
+                style="@style/textInputBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="200dp"
+                android:layout_marginTop="30dp"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/ErrorText"
+                app:hintTextAppearance="@style/MyHintText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/regular"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName|textCapWords"
+                    android:paddingStart="20dp"
+                    android:textColorHint="@color/grey" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/last_name_input_layout"
+                style="@style/textInputBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/ErrorText"
+                app:hintTextAppearance="@style/MyHintText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_input_layout">
+
+                <EditText
+                    android:id="@+id/edt_last_name"
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/regular"
+                    android:hint="@string/last_name"
+                    android:inputType="textPersonName|textCapWords"
+                    android:paddingStart="20dp"
+                    android:textColorHint="@color/grey" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/birthday_input_layout"
+                style="@style/textInputBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/ErrorText"
+                app:hintTextAppearance="@style/MyHintText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/last_name_input_layout">
+
+                <EditText
+                    android:id="@+id/edt_birthday"
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/regular"
+                    android:hint="@string/birthday"
+                    android:inputType="date"
+                    android:paddingStart="20dp"
+                    android:textColorHint="@color/grey" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/datePicker_view"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/ic_calendar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/birthday_input_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.577" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_input_layout"
+                style="@style/textInputBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/ErrorText"
+                app:hintTextAppearance="@style/MyHintText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/birthday_input_layout"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/regular"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="10dp"
+                    android:textColorHint="@color/grey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/conf_password_input_layout"
+                style="@style/textInputBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="outline"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/ErrorText"
+                app:hintTextAppearance="@style/MyHintText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_input_layout"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edt_conf_password"
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/regular"
+                    android:hint="@string/conf_password"
+                    android:inputType="textPassword"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="10dp"
+                    android:textColorHint="@color/grey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/button"
+                android:enabled="false"
+                android:fontFamily="@font/regular"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conf_password_input_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
+

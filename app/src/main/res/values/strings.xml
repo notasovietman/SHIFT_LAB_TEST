@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SHIFT_LAB</string>
+    <string name="login">Регистрация</string>
+    <string name="special_for_shift">Специально для ШИФТ_Лаб</string>
+    <string name="name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="birthday">дд.мм.гггг</string>
+    <string name="password">Пароль</string>
+    <string name="conf_password">Повторить пароль</string>
+    <string name="register">Регистрация</string>
+    <string name="btn_hello">Приветствие</string>
+    <string name="warning">!</string>
+    <string name="warning_2">Некорректный ввод данных</string>
+    <string name="not_match_password">Пароли не совпадают</string>
+    <string name="upperCase_name_error">Введите с большой буквы</string>
+    <string name="upperCase_last_name_error">Введите с большой буквы</string>
+    <string name="wrong_name_length_error">Имя от 2 до 15 символов</string>
+    <string name="wrong_last_name_length_error">Фамилия от 3 до 20 символов</string>
+    <string name="empty_error">Строка не может быть пустой</string>
+    <string name="no_digits_error">Пароль должен содержать цифры</string>
+    <string name="no_letters_error">Пароль должен содержать буквы</string>
+    <string name="wrong_password_length_error">Пароль от 6 до 15 символов</string>
+    <string name="correct"> </string>
+    <string name="welcome">Приветствие...</string>
+</resources>
